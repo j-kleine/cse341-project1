@@ -1,0 +1,9 @@
+GET http://localhost:3000/contacts
+# this request returns a json object with all contacts (in localhost environment).
+GET http://localhost:3000/contacts/placeholderId
+# this request returns a json object with a specific contact matching the contacts id (in localhost environment).
+
+GET https://cse341-project1-whrr.onrender.com/contacts/
+# this request returns a json object with all contacts (in deployed render environment).
+GET https://cse341-project1-whrr.onrender.com/contacts/placeholderId
+# this request returns a json object with a specific contact matching the contacts id (in deployed render environment).
