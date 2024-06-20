@@ -3,7 +3,37 @@
 GET http://localhost:3000/contacts
 
 ### Get contact by id
-GET http://localhost:3000/contacts/6670cf052d390d9c530063b2
+GET http://localhost:3000/contacts/667370e33a0c0c23080df58e
+
+
+### Create contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Gandalf",
+    "lastName":"the White",
+    "email":"greybeard@gmail.com",
+    "favoriteColor":"white",
+    "birthday":"01.01.1111"
+}
+
+
+### Update contact
+PUT http://localhost:3000/contacts/6670cf052d390d9c530063b2 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Aragorn",
+    "lastName":"Strider",
+    "email":"aragstri@gmail.com",
+    "favoriteColor":"blue",
+    "birthday":"01.03.2931"
+}
+
+
+### Delete contact
+DELETE  http://localhost:3000/contacts/667370e33a0c0c23080df58e HTTP/1.1
 
 
 
@@ -13,3 +43,31 @@ GET https://cse341-project1-whrr.onrender.com/contacts
 
 ### Get contact by id
 GET https://cse341-project1-whrr.onrender.com/contacts/6670cf052d390d9c530063b2
+
+
+### Create contact
+POST https://cse341-project1-whrr.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Aragorn",
+    "lastName":"Dunadan",
+    "email":"aragdun@gmail.com",
+    "favoriteColor":"green",
+    "birthday":"01.03.2931"
+}
+
+### Update contact
+PUT https://cse341-project1-whrr.onrender.com/contacts/6670cf052d390d9c530063b2 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Aragorn",
+    "lastName":"Dunadan",
+    "email":"aragdun@gmail.com",
+    "favoriteColor":"green",
+    "birthday":"01.03.2931"
+}
+
+### Delete contact
+DELETE  https://cse341-project1-whrr.onrender.com/contacts/6670cf052d390d9c530063b2 HTTP/1.1
