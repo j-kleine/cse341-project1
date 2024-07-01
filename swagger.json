@@ -105,8 +105,8 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
+            "name": "body",
+            "in": "body",
             "schema": {
               "type": "object",
               "properties": {
